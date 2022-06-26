@@ -21,6 +21,16 @@
             <nav class="main-nav">
                 <a href="./index.html" class="main-nav__logo"><span class="main-nav__logo-web">Web</span><span
                         class="main-nav__logo-studio">Studio</span></a>
+                        <button type="button" class="main-nav__mobil-menu " aria-expanded="false" aria-controls="main-nav__container"
+                            data-menu-button>
+                            <svg class="main-nav__mobil-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                                <use class="main-nav__menu-close" href="./images/icons.svg#icon-menu-header-close"></use>
+                                <use class="main-nav__menu-open" href="./images/icons.svg#icon-menu-header"></use>
+                            </svg>
+                        </button>
+                        <div class="main-nav__container" id="main-nav__container" data-menu>
+                            Контент меню
+                        </div>
                 <ul class="main-nav__site-nav list">
                     <li class="main-nav__item"><a href="./index.html" class="main-nav__link-nav current">Студия</a></li>
                     <li class="main-nav__item"><a href="./portfolio.html" class="main-nav__link-nav">Портфолио</a></li>
@@ -115,7 +125,7 @@
         <div class="conteiner ">
 <h2 class="team__title">Наша команда</h2>
 <ul class="list team__command">
-    <li class="team__itemcomand"><img class="imgcommand" src="./Images/img1.jpeg" alt="Игорь Демьяненко" width="270">
+    <li class="team__itemcomand"><img class="team__imgcommand" src="./Images/img1.jpeg" alt="Игорь Демьяненко" width="270">
       <div class="team__dcommand"><h3 class="team__team">Игорь Демьяненко</h3>
     <p lang="en-GB" class=" work__paragraphly">Product Designer</p>
 <ul class="team__command-svg">
@@ -138,7 +148,7 @@
 </ul>
 </div>
     </li>
-    <li class="team__itemcomand"><img class="imgcommand" src="./Images/img2.jpeg" alt="Ольга Репина" width="270">
+    <li class="team__itemcomand"><img class="team__imgcommand" src="./Images/img2.jpeg" alt="Ольга Репина" width="270">
         <div class="team__dcommand"><h3 class="team__team">Ольга Репина</h3>
         <p lang="en-GB" class=" work__paragraphly">Frontend Developer</p>
    
@@ -162,7 +172,7 @@
     </ul>
     </div>
     </li>
-    <li class="team__itemcomand"><img class="imgcommand" src="./Images/img3.jpeg" alt="Николай Тарасов" width="270">
+    <li class="team__itemcomand"><img class="team__imgcommand" src="./Images/img3.jpeg" alt="Николай Тарасов" width="270">
         <div class="team__dcommand"><h3 class="team__team">Николай Тарасов</h3>
         <p lang="en-GB" class=" work__paragraphly">Marketing</p>
     <ul class="team__command-svg">
@@ -184,7 +194,7 @@
         </li>
     </ul></div>
     </li>
-    <li class="team__itemcomand"><img class="imgcommand" src="./Images/img4.jpeg" alt="Михаил Ермаков" width="270">
+    <li class="team__itemcomand"><img class="team__imgcommand" src="./Images/img4.jpeg" alt="Михаил Ермаков" width="270">
         <div class="team__dcommand"><h3 class="team__team">Михаил Ермаков</h3>
         <p lang="en-GB" class=" work__paragraphly">UI Designer</p>
     <ul class="team__command-svg">

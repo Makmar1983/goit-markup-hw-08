@@ -29,7 +29,71 @@
 
 /* Навигация */
 
+// мобильное меню
+.hmain-nav__mobil-menu {
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
 
+    & .main-nav__menu-close {
+        display: none;
+    }
+
+    &.is-open .main-nav__menu-close {
+        display: block;
+    }
+
+    &.is-open .main-nav__menu-open {
+        display: none;
+    }
+@media screen and (min-width:768px) {
+    display: none;
+}
+}
+
+.main-nav__container {
+
+    background-color: $background-color;
+
+
+
+    &.is-open {
+        display: block;
+    }
+
+    @media screen and (max-width:767px) {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 48px 40px;
+        text-align: center;
+    }
+
+}
+
+.nav {
+
+
+    @media screen and (min-width:768px) {
+        margin-right: 70px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 269px;
+    }
+}
+
+main-nav__mobil-icon:hover,
+main-nav__mobil-icon:focus {
+    fill: $accent-color;
+}
+
+// меню
 
 .main-nav {
     display: flex;

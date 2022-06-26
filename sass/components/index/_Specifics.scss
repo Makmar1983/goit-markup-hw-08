@@ -1,5 +1,9 @@
 .specifics {
     padding-top: 94px;
+    @media screen and (max-width:768px) {
+        padding-bottom: 60px;
+    
+    }
 }
 
 .specifics__title {
@@ -17,8 +21,22 @@
 .specifics__peculiarities {
 @media screen and (min-width:768px) {
     display: flex;
+    
 }
+
 }
+
+// @media screen and (max-width: 767px) {
+//     .pecifics__peculiarities:not(:last-child) {
+//         margin-bottom: 30px;
+//     }
+// }
+
+// @media screen and (min-width:1200px) {
+//     pecifics__peculiarities:not(:last-child) {
+//         margin-right: 30px;
+//     }
+
 
 .specifics__subtitle {
     margin-bottom: 10px;
@@ -26,10 +44,18 @@
 
 .specifics__peculiarities .specifics__item+.specifics__item {
     margin-left: 30px;
+    @media screen and (max-width:768px) {
+        margin-left: 0;
+    
+    }
 }
 
 .specifics__peculiarities .specifics__item {
     width: 270px;
+    @media screen and (max-width:768px) {
+        width: 100%;
+    margin-bottom: 30px;
+    }
 }
 
 .specifics__div-svg {
