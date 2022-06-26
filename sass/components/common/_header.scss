@@ -3,6 +3,17 @@
     background-color: $primary-bg-color;
     color: $primary-text-color;
     font-family: Roboto, sans-serif;
+    @media screen and (max-width: 767px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    
+    @media screen and (max-width: 767px) {
+        position: relative;
+    
+    }
 }
 
 .page-header {
@@ -23,6 +34,7 @@
 .main-nav {
     display: flex;
     align-items: center;
+   
 }
 
 
@@ -30,6 +42,10 @@
 .main-nav__site-nav {
     display: flex;
     margin-left: 93px;
+    @media screen and (max-width: 767px) {
+        display: none;
+    
+    }
 }
 
 .main-nav__site-nav .main-nav__item+.main-nav__item {
@@ -84,6 +100,10 @@
 
 .auth-nav {
     display: flex;
+    @media screen and (max-width: 767px) {
+        display: none;
+    
+    }
 }
 
 .auth-nav .auth-nav__item+.auth-nav__item {

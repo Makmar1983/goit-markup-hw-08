@@ -8,19 +8,39 @@ _______________*/
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+   
 }
 
 .footer__conteiner {
-    display: flex;
+    // display: flex;
     align-items: baseline;
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+    
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
 }
 
 .footer__adress-div {
     margin-right: 70px;
+    @media screen and (max-width: 767px) {
+        margin-right: 0;
+    }
 }
 
 .footer__adress {
     font-style: normal;
+    @media screen and (max-width:767px) {
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 60px;
+    }
 }
 
 .footer__logof {
@@ -32,6 +52,12 @@ _______________*/
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-decoration: none;
+    @media screen and (max-width:767px) {
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -102,6 +128,12 @@ _______________*/
     text-transform: uppercase;
 
     color: #FFFFFF;
+@media screen and (max-width:767px) {
+
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 }
 
 .footer__mail {
@@ -113,18 +145,47 @@ _______________*/
 
 .footer .list {
     display: flex;
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+        margin-bottom: 60px;
+    }
 }
 
 .footer__subscribe {
     display: block;
     margin-left: 93px;
-    width: 576px;
-
+    // width: 576px;
+@media screen and (max-width: 767px) {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+margin-left: 0;
 }
-
+}
+.footer__conect-div{
+@media screen and (max-width:767px) {
+    display: block;
+    justify-content: center;
+}
+}
+.footer__form{
+    @media screen and (max-width:767px) {
+        margin: auto;
+        padding: 0px 15px;
+    
+    }
+    
+    @media screen and (min-width:1200px) {
+        min-width: 570px;
+        margin-left: 93px;
+    }
+}
 .footer__subscribe-flex {
     display: flex;
     align-items: center;
+    @media screen and (max-width:767px) {
+        display: block;
+    }
 }
 
 .footer__subscribe-button {
@@ -148,6 +209,13 @@ _______________*/
 
     transition: background-color 250ms $timing,
         color 250ms $timing;
+        @media screen and (max-width: 767px) {
+            position: relative;
+            // transform: translateX(120px);
+            margin-left: auto;
+            margin-right: auto;
+
+        }
 }
 
 .footer__subscribe-svg {
@@ -164,6 +232,11 @@ _______________*/
     background-color: transparent;
     color: $primary-white-color;
     transition: border-color 250ms $timing;
+    @media screen and (max-width:767px) {
+        width: 100%;
+        margin-bottom: 20px;
+    
+    }
 }
 
 .footer__subscribe-input:focus,
@@ -187,4 +260,12 @@ _______________*/
     display: flex;
     flex-direction: column;
 
+}
+.footer__con {
+display: flex;
+align-items: center;
+
+@media screen and (max-width: 767px) {
+    display: block;
+}
 }
