@@ -137,14 +137,31 @@
     display: flex;
     @media screen and (max-width: 767px) {
         display: none;
-    
+    }
+    @media screen and (min-width: 768px) {
+        display: block;
+        align-items: center;
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 
 .auth-nav .auth-nav__item+.auth-nav__item {
     margin-left: 50px;
+    @media screen and (max-width: 1199px) {
+        margin-left: 0;
+    }
 }
-
+.auth-nav__item{
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 10px;
+    }
+}
 .auth-nav.list {
     margin-left: auto;
 }
@@ -163,6 +180,9 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     transition: color 250ms $timing, fill 250ms $timing;
+    @media screen and (max-width: 1199px) {
+        padding: 0;
+    }
 }
 
 .auth-nav__linkpadding:hover,

@@ -6,6 +6,9 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-decoration: none;
+    @media screen and (max-width:768px) {
+       margin-right: auto;
+    }
 }
 
 .main-nav__logo-studio {
