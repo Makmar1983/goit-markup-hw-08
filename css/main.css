@@ -256,8 +256,7 @@ p {
   .auth-nav {
     display: block;
     align-items: center;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -665,19 +664,19 @@ p {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .team__itemcomand:nth-child(n) {
     margin-left: 0;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__itemcomand:nth-child(2n) {
     margin-left: 30px;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__itemcomand:nth-last-child(-n+2) {
     margin-bottom: 0px;
   }
@@ -788,13 +787,13 @@ p {
 }
 @media screen and (max-width: 767px) {
   .clients__item .list {
-    flex-basis: calc((100% - 60px) / 2);
+    width: calc((100% - 60px) / 2);
     margin: 15px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__item .list {
-    flex-basis: calc((100% - 90px) / 3);
+    width: calc((100% - 90px) / 3);
     margin: 15px;
   }
 }
