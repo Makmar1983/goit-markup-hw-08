@@ -18,7 +18,7 @@
     <!-- Хэдер -->
     <header class="page-header">
         <div class="conteiner page-header__conteiner">
-            <nav class="main-nav">
+            <div class="main-nav">
                 <a href="./index.html" class="main-nav__logo"><span class="main-nav__logo-web">Web</span><span
                         class="main-nav__logo-studio">Studio</span></a>
                         <button type="button" 
@@ -30,15 +30,78 @@
                                 <use class="main-nav__menu-open" href="./images/icons.svg#icon-menu-header"></use>
                             </svg>
                         </button>
-                        <div class="main-nav__container" id="main-nav__container" data-menu>
-                            Контент меню
-                        </div>
+                        <!-- Мобильное меню -->
+                        <nav class="main-nav__container" id="main-nav__container" data-menu>
+                            <div class="main-nav__mobile-menu">
+                                <ul class=" list">
+                                    <li class="main-nav__item"><a href="./index.html" class="main-nav__link-nav ">Студия</a></li>
+                                    <li class="main-nav__item"><a href="./portfolio.html" class="main-nav__link-nav">Портфолио</a></li>
+                                    <li class="main-nav__item"><a href="" class="main-nav__link-nav">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__link-wrap-mobile">
+                                <ul class="header__list-contact-mobile">
+                                  <li class="header__item-contact-mobile">
+                                    <a class="header__link-contact-mobile" href="tel:+380961111111">
+                                      +380961111111
+                                    </a>
+                                  </li>
+                                  <li class="header__item-contact-mobile">
+                                    <a
+                                      class="header__link-mail-mobile"
+                                      href="mailto:info@devstudio.com"
+                                    >
+                                      info@devstudio.com
+                                    </a>
+                                  </li>
+                                </ul>
+                                <ul class="header__social">
+                                  <li class="header__social-item-mobile">
+                                    <a
+                                      class="header__social-link-mobile"
+                                      href="https://www.instagram.com/"
+                                      target="_blank"
+                                    >
+                                      Instagram</a
+                                    >
+                                  </li>
+                                  <li class="header__social-item-mobile">
+                                    <a
+                                      class="header__social-link-mobile"
+                                      href="https://twitter.com/?lang=ru"
+                                      target="_blank"
+                                      >Twitter</a
+                                    >
+                                  </li>
+                                  <li class="header__social-item-mobile">
+                                    <a
+                                      class="header__social-link-mobile"
+                                      href="https://m.facebook.com/login/"
+                                      target="_blank"
+                                      >Facebook</a
+                                    >
+                                  </li>
+                                  <li class="header__social-item-mobile">
+                                    <a
+                                      class="header__social-link-mobile"
+                                      href="https://www.linkedin.com/"
+                                      target="_blank"
+                                      >LinkedIn</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                        </nav>
+                        <!-- меню пк и планшет -->
+                        <nav>
                 <ul class="main-nav__site-nav list">
                     <li class="main-nav__item"><a href="./index.html" class="main-nav__link-nav current">Студия</a></li>
                     <li class="main-nav__item"><a href="./portfolio.html" class="main-nav__link-nav">Портфолио</a></li>
                     <li class="main-nav__item"><a href="" class="main-nav__link-nav">Контакты</a></li>
                 </ul>
+                
             </nav>
+            </div>
         
             <ul class="auth-nav list">
                 <li class="auth-nav__item"><a href="mailto:info@devstudio.com" class="auth-nav__linkpadding auth-nav__link-align">
