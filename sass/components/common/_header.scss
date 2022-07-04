@@ -37,7 +37,8 @@
 .main-nav__mobil-menu{
     z-index: 3;
     display: inline-flex;
-        margin: 0;
+        // margin: 0;
+        
         padding: 0;
         border: 0;
        cursor: pointer;
@@ -55,6 +56,9 @@
 .main-nav__mobil-menu.is-open .main-nav__menu-open{
     display: none;
 }
+.testt{
+    margin-bottom: 250px;
+}
 .main-nav__container{
     display: none;
     z-index: 2;
@@ -63,10 +67,11 @@
     left: 0;
   width: 100vw;
   height: 100vh;
+
   flex-direction: column;
   background-color: white;
     padding: 20px;
-    text-align: center;
+    // text-align: center;
     font-style: 20px;
 &.is-open {
     display: block;
@@ -135,10 +140,12 @@ margin-bottom: 0;
     flex-wrap: wrap;
     margin-top: -10px;
     margin-right: -10px;
+    justify-content: center;
     
       &-item-mobile{
         margin-top: 10px;
         margin-right: 10px;
+       
       }
     
       &-link-mobile{
@@ -149,8 +156,10 @@ margin-bottom: 0;
         font-size: 18px;
         line-height: 22px;
         letter-spacing: 0.02em;
-        color: var(--activ-link-but);
+        color: $accent-color;
         text-decoration: none;
+       justify-content: center;
+        
     
       }
       &-item-mobile:last-child &-link-mobile{
@@ -176,7 +185,7 @@ margin-bottom: 0;
       
           &:hover,
           &:focus {
-          color: var(--activ-link-but);
+          color: $accent-color;
       }}
       
       
@@ -196,7 +205,7 @@ margin-bottom: 0;
         font-size: 34px;
         line-height: 1.17;
         letter-spacing: 0.02em;
-        color: var(--activ-link-but);
+        color: $accent-color;
         text-decoration: none;
       }
       
