@@ -120,7 +120,7 @@
     <main>
     <!-- section 1 -->
     <section class="hero">
-        <div class="conteiner">
+        <div class="conteinerr">
         <h1 class="hero__title">Эффективные решения <br>для вашего бизнеса</h1>
         <button type="button" data-modal-open class="hero__button hero__primary ">Заказать услугу</button>
 </div>
@@ -177,9 +177,25 @@
          <div class="conteiner ">
 <h2 class="work__title">Чем мы занимаемся</h2>
 <ul class="list work__works">
-    <li class="work__item"><h3 class="work__item-tittle">Десктопные приложения</h3><img width="370" height="294" src="./Images/box1.jpeg" alt="Написание кода"> </li>
-    <li class="work__item"><h3 class="work__item-tittle">Десктопные приложения</h3><img width="370" height="294" src="./Images/box2.jpeg" alt="Сощдание приложений"> </li>
-    <li class="work__item"><h3 class="work__item-tittle">Десктопные приложения</h3><img width="370" height="294" src="./Images/box3.jpeg" alt="Дизайн"> </li>
+    <li class="work__item">
+        <picture>
+            <source srcset="./Images/box1.jpeg 1x, ./images/box1-x2.jpg 2x" />
+            <img src="./Images/box1.jpeg" alt="написание кода" width="370" />
+        </picture>
+        <h3 class="work__item-tittle">Десктопные приложения</h3>
+     </li>
+    <li class="work__item">
+        <picture>
+            <source srcset="./images/box2.jpeg 1x, ./images/box2-x2.png 2x" />
+            <img src="./images/box2.jpeg" alt="Создание приложений" width="370" />
+        </picture>
+        <h3 class="work__item-tittle">Мобильные приложения</h3> </li>
+    <li class="work__item">
+        <picture>
+            <source srcset="./Images/box3.jpeg 1x, ./images/box3-x2.jpg 2x" />
+            <img src="./Images/box3.jpeg" alt="Дизайн" width="370" />
+        </picture>
+        <h3 class="work__item-tittle">Дизайнерские решения</h3> </li>
 </ul>
          </div>
      </section>
@@ -190,7 +206,22 @@
         <div class="conteiner ">
 <h2 class="team__title">Наша команда</h2>
 <ul class="list team__command">
-    <li class="team__itemcomand"><img class="team__imgcommand" src="./Images/img1.jpeg" alt="Игорь Демьяненко" width="270">
+    <li class="team__itemcomand">
+        <picture  class="team__imgcommand">
+            <source srcset="
+                            ./images/product-designer.jpg    1x,
+                            ./images/product-designer-x2.jpg 2x
+                          " media="(min-width: 1200px)" />
+            <source srcset="
+                            ./images/product-designer-tab.jpg    1x,
+                            ./images/product-designer-tab-x2.jpg 2x
+                          " media="(min-width: 768px)" />
+            <source srcset="
+                            ./images/product-designer-mob.jpg    1x,
+                            ./images/product-designer-mob-2x.jpg 2x
+                          " media="(min-width: 320px)" />
+            <img src="./images/product-designer-mob.jpg" alt="продукт-менеджер" width="450" />
+        </picture>
       <div class="team__dcommand"><h3 class="team__team">Игорь Демьяненко</h3>
     <p lang="en-GB" class=" work__paragraphly">Product Designer</p>
 <ul class="team__command-svg">
@@ -213,7 +244,22 @@
 </ul>
 </div>
     </li>
-    <li class="team__itemcomand"><img class="team__imgcommand" src="./Images/img2.jpeg" alt="Ольга Репина" width="270">
+    <li class="team__itemcomand">
+        <picture>
+            <source srcset="
+                            ./images/frontend-developer.jpg    1x,
+                            ./images/frontend-developer-x2.jpg 2x
+                          " media="(min-width: 1200px)" />
+            <source srcset="
+                            ./images/frontend-developer-tab.jpg    1x,
+                            ./images/frontend-developer-tab-x2.jpg 2x
+                          " media="(min-width: 768px)" />
+            <source srcset="
+                            ./images/frontend-developer-mob.jpg    1x,
+                            ./images/frontend-developer-mob-2x.jpg 2x
+                          " media="(min-width: 320px)" />
+            <img src="./images/frontend-developer.jpg" alt="фронтенд-разработчик" width="450" />
+        </picture>
         <div class="team__dcommand"><h3 class="team__team">Ольга Репина</h3>
         <p lang="en-GB" class=" work__paragraphly">Frontend Developer</p>
    
@@ -237,7 +283,22 @@
     </ul>
     </div>
     </li>
-    <li class="team__itemcomand"><img class="team__imgcommand" src="./Images/img3.jpeg" alt="Николай Тарасов" width="270">
+    <li class="team__itemcomand">
+                    <picture>
+                        <source srcset="
+                                        ./images/marketing.jpg    1x,
+                                        ./images/marketing-x2.jpg 2x
+                                      " media="(min-width: 1200px)" />
+                        <source srcset="
+                                        ./images/marketing-tab.jpg    1x,
+                                        ./images/marketing-tab-x2.jpg 2x
+                                      " media="(min-width: 768px)" />
+                        <source srcset="
+                                        ./images/marketing-mob.jpg    1x,
+                                        ./images/marketing-mob-2x.jpg 2x
+                                      " media="(min-width: 320px)" />
+                        <img src="./images/marketing.jpg" alt="маркетинг" width="450" />
+                    </picture>
         <div class="team__dcommand"><h3 class="team__team">Николай Тарасов</h3>
         <p lang="en-GB" class=" work__paragraphly">Marketing</p>
     <ul class="team__command-svg">
@@ -259,7 +320,22 @@
         </li>
     </ul></div>
     </li>
-    <li class="team__itemcomand"><img class="team__imgcommand" src="./Images/img4.jpeg" alt="Михаил Ермаков" width="270">
+    <li class="team__itemcomand">
+        <picture>
+            <source srcset="
+                            ./images/ui-designer.jpg    1x,
+                            ./images/ui-designer-x2.jpg 2x
+                          " media="(min-width: 1200px)" />
+            <source srcset="
+                            ./images/ui-designer-tab.jpg    1x,
+                            ./images/ui-designer-tab-x2.jpg 2x
+                          " media="(min-width: 768px)" />
+            <source srcset="
+                            ./images/ui-designer-mob.jpg    1x,
+                            ./images/ui-designer-mob-2x.jpg 2x
+                          " media="(min-width: 320px)" />
+            <img src="./images/ui-designer.jpg" alt="дезайнер" width="450" />
+        </picture>
         <div class="team__dcommand"><h3 class="team__team">Михаил Ермаков</h3>
         <p lang="en-GB" class=" work__paragraphly">UI Designer</p>
     <ul class="team__command-svg">
